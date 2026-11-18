@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NESolutions Homes LLC</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+:root{
+--gold:#d4af37;
+--gold-light:#f7d96b;
+--dark:#0a0a0a;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+background:rgba(0,0,0,.95);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid rgba(212,175,55,.3);
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:700;
+color:var(--gold);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+nav a:hover{
+color:var(--gold);
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:120px 20px;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:4rem;
+color:var(--gold);
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:800px;
+margin:auto;
+margin-bottom:40px;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 30px;
+text-decoration:none;
+border-radius:50px;
+font-weight:700;
+transition:.3s;
+}
+
+.btn-gold{
+background:var(--gold);
+color:black;
+}
+
+.btn-outline{
+border:2px solid var(--gold);
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+color:var(--gold);
+margin-bottom:60px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border:1px solid rgba(212,175,55,.25);
+border-radius:20px;
+}
+
+.card h3{
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.price{
+margin-top:15px;
+font-weight:700;
+color:#f7d96b;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:var(--gold);
+text-decoration:none;
+}
+
+.footer{
+background:#050505;
+padding:30px;
+text-align:center;
+border-top:1px solid rgba(212,175,55,.2);
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">NESolutions Homes LLC</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#jobs">Careers</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Building Better Homes</h1>
+
+<p>
+Professional Remodeling, Handyman, Flooring, Painting,
+Property Maintenance and Cleaning Services throughout South Florida.
+</p>
+
+<div class="buttons">
+
+<a href="#contact" class="btn btn-gold">
+Request a Free Estimate
+</a>
+
+<a href="#jobs" class="btn btn-outline">
+Apply For Employment
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="services" id="pricing">
+
+<div class="card">
+<h3>Interior & Exterior Painting</h3>
+<p>Residential and commercial painting.</p>
+<p class="price">Starting at $2-$6 / sq ft</p>
+</div>
+
+<div class="card">
+<h3>Floor Installation</h3>
+<p>LVP, laminate, tile and hardwood installation.</p>
+<p class="price">Starting at $4-$12 / sq ft</p>
+</div>
+
+<div class="card">
+<h3>Handyman Services</h3>
+<p>Repairs, drywall, doors, fixtures and maintenance.</p>
+<p class="price">Starting at $75 / hour</p>
+</div>
+
+<div class="card">
+<h3>Property Maintenance</h3>
+<p>Routine inspections and repairs for homes and rentals.</p>
+<p class="price">Custom Quote</p>
+</div>
+
+<div class="card">
+<h3>Residential Cleaning</h3>
+<p>Recurring and deep cleaning services.</p>
+<p class="price">Starting at $35-$75 / hour</p>
+</div>
+
+<div class="card">
+<h3>Remodeling Projects</h3>
+<p>Kitchens, bathrooms and complete interior renovations.</p>
+<p class="price">Free Estimate</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="jobs">
+
+<h2 class="section-title">Work With Us</h2>
+
+<div class="contact">
+
+<p>
+We're always looking for experienced professionals:
+painters, cleaners, installers, handyman technicians and remodel specialists.
+</p>
+
+<br>
+
+<a class="btn btn-gold" href="mailto:hr@nesolutionshomes.com">
+Apply for Employment
+</a>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+
+<p><strong>Instagram:</strong></p>
+
+<p>
+<a href="https://instagram.com/enelsolutionsllc">
+@enelsolutionsllc
+</a>
+</p>
+
+<br>
+
+<a href="mailto:info@nesolutionshomes.com" class="btn btn-gold">
+Request a Quote
+</a>
+
+</div>
+
+</section>
+
+<div class="footer">
+
+<p>© 2026 NESolutions Homes LLC</p>
+
+</div>
+
+<a class="whatsapp"
+href="https://wa.me/7863284967"
+target="_blank">
+☎
+</a>
+
+</body>
+</html>
