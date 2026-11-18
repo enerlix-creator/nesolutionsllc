@@ -182,6 +182,71 @@ color:white;
 box-shadow:0 0 20px rgba(0,0,0,.4);
 }
 
+@media(max-width:640px){
+header{
+flex-direction:column;
+gap:12px;
+padding:14px 5%;
+}
+
+.logo{
+font-size:1.2rem;
+text-align:center;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:8px 16px;
+}
+
+nav a{
+margin-left:0;
+font-size:.9rem;
+}
+
+.hero{
+padding:150px 20px 90px;
+}
+
+.hero h1{
+font-size:clamp(2.2rem,10vw,3rem);
+}
+
+.hero p{
+font-size:1rem;
+}
+
+section,#pricing{
+scroll-margin-top:125px;
+}
+
+section{
+padding:70px 6%;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:40px;
+}
+
+.services{
+grid-template-columns:minmax(0,1fr);
+}
+
+.card{
+padding:24px;
+}
+
+.whatsapp{
+width:56px;
+height:56px;
+bottom:18px;
+right:18px;
+}
+}
+
 </style>
 </head>
 
